@@ -1,2 +1,1 @@
 # Pytorch
-Learning pytorch
