@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+# test
 
 class self_attention(nn.Module):
     def __init__(self, embed_size, heads):
@@ -7,6 +8,7 @@ class self_attention(nn.Module):
         self.embed_size = embed_size
         self.heads = heads
         self.head_dim = embed_size // heads
+        
         
         assert (self.head_dim * heads == embed_size), "Embed size needs to be divisable by heads"
         self.values = nn.Linear(self.head_dim, self.head_dim, bias = False)
